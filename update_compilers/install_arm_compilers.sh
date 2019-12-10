@@ -93,6 +93,7 @@ install_arm() {
 }
 
 install_arm s3://compiler-explorer/opt-nonfree/Arm-Compiler-for-HPC_19.3_Ubuntu_16.04_aarch64.tar 19.3
+install_arm s3://compiler-explorer/opt-nonfree/Arm-Compiler-for-Linux_20.0_Ubuntu_16.04_aarch64.tar 20.0
 
 ##################################
 # Arm Compiler for Linux wrapper script
@@ -139,4 +140,9 @@ install_arm_wrapper /opt/arm/19.3/arm-hpc-compiler-19.3_Generic-AArch64_Ubuntu-1
     /opt/arm/19.3/gcc-8.2.0_Generic-AArch64_Ubuntu-16.04_aarch64-linux \
     lib/clang/7.1.0 \
     61 \
+    /opt/compiler-explorer/aarch64-sysroot-2019.02
+install_arm_wrapper /opt/arm/20.0/arm-linux-compiler-20.0_Generic-AArch64_Ubuntu-16.04_aarch64-linux \
+    /opt/arm/20.0/gcc-9.2.0_Generic-AArch64_Ubuntu-16.04_aarch64-linux \
+    lib/clang/9.0.1 \
+    42 \
     /opt/compiler-explorer/aarch64-sysroot-2019.02
